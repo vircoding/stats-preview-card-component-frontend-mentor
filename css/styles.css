@@ -76,18 +76,20 @@ img {
 /* Card | Info | Numbers */
 .info-numbers {
     display: flex;
-    gap: 30px;
+    gap: 62px;
 }
 
 .item-stat {
     color: var(--white);
-    font-size: 26px;
+    font-size: 23px;
 }
 
 .item-name {
     font-family: var(--dark-desaturated-blue);
     color: var(--slightly-transparent-white-2);
     margin-top: 5px;
+    letter-spacing: 1px;
+    font-size: 12px;
     text-transform: uppercase;
 }
 
@@ -146,10 +148,15 @@ img {
     .info-numbers {
         margin-top: 40px;
         flex-direction: column;
+        gap: 30px;
     }
 
     .item-stat {
-        font-size: 24px;
+        font-size: 23px;
+    }
+
+    .item-name {
+        font-size: 13px;
     }
 
     /* Card | Picture */
