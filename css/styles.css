@@ -1,0 +1,163 @@
+/* Google Fonts https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+/* Custom Properties */
+:root {
+    --inter: 'Inter', sans-serif;
+    --lexend-deca: 'Lexend Deca', sans-serif;
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: hsl(277, 64%, 61%);
+    --white: hsl(0, 0%, 100%);
+    --slightly-transparent-white-1: hsla(0, 0%, 100%, 0.75);
+    --slightly-transparent-white-2: hsla(0, 0%, 100%, 0.6);
+}
+
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* Standard Styles */
+body {
+    /* TODO: set the standard font family */
+    font-size: 15px;
+    background-color: var(--very-dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+}
+
+/* Card */
+.card {
+    background-color: var(--dark-desaturated-blue);
+    width: 77%;
+    max-width: 1110px;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    overflow: hidden;
+    /* height: 445px; */
+}
+
+/* Card | Info */
+.card-info {
+    width: 50%;
+    font-family: var(--inter);
+    padding: 70px;
+    padding-right: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-title {
+    font-size: 36px;
+    color: var(--white);
+}
+
+.info-purple {
+    color: var(--soft-violet);
+}
+
+.info-paragraph {
+    flex-grow: 1;
+    margin-top: 30px;
+    line-height: 1.6;
+    color: var(--slightly-transparent-white-1);
+}
+
+/* Card | Info | Numbers */
+.info-numbers {
+    display: flex;
+    gap: 30px;
+}
+
+.item-stat {
+    color: var(--white);
+    font-size: 26px;
+}
+
+.item-name {
+    font-family: var(--dark-desaturated-blue);
+    color: var(--slightly-transparent-white-2);
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.queries {
+    text-transform: uppercase;
+}
+
+/* Card | Picture */
+.mobile-img {
+    display: none;
+}
+
+.card-picture {
+    position: relative;
+}
+
+.picture-img {
+    width: 100%;
+    height: 100%;
+}
+
+.picture-color {
+    background-color: hsla(280, 94%, 25%, 0.55);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* Mobile Design */
+@media (max-width: 720px) {
+
+    /* Card */
+    .card {
+        width: 87%;
+        flex-direction: column-reverse;
+    }
+
+    /* Card | Info */
+    .card-info {
+        width: 100%;
+        padding: 35px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .info-title {
+        font-size: 27px;
+        margin-top: 10px;
+    }
+
+    .info-paragraph {
+        margin-top: 20px;
+    }
+
+    /* Card | Info | Numbers */
+    .info-numbers {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .item-stat {
+        font-size: 24px;
+    }
+
+    /* Card | Picture */
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+}

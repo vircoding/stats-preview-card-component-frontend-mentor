@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Stats preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stats preview card component</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./css/styles.css" />
+    </head>
+    <body>
+        <!-- Card -->
+        <main class="card">
+            <div class="card-info">
+                <h1 class="info-title">
+                    Get <span class="info-purple">insights</span> that help your business grow.
+                </h1>
+                <p class="info-paragraph">
+                    Discover the benefits of data analytics and make better decisions regarding
+                    revenue, customer experience, and overall efficiency.
+                </p>
+                <div class="info-numbers">
+                    <div class="numbers-item companies">
+                        <h1 class="item-stat">10k+</h1>
+                        <p class="item-name">companies</p>
+                    </div>
+                    <div class="numbers-item templates">
+                        <h1 class="item-stat">314</h1>
+                        <p class="item-name">templates</p>
+                    </div>
+                    <div class="numbers-item queries">
+                        <h1 class="item-stat">12m+</h1>
+                        <p class="item-name">queries</p>
+                    </div>
+                </div>
+            </div>
+            <figure class="card-picture">
+                <div class="picture-color"></div>
+                <img
+                    src="./images/image-header-desktop.jpg"
+                    alt="Image Header"
+                    class="picture-img desktop-img"
+                />
+                <img
+                    src="./images/image-header-mobile.jpg"
+                    alt="Image Header"
+                    class="picture-img mobile-img"
+                />
+            </figure>
+        </main>
+    </body>
 </html>
+
